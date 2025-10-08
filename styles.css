@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff5f0;
+  color: #3a1b1b;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  padding-bottom: 70px;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #d85f4f;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 12px;
+}
+
+.logo-text {
+  margin: 4px 0;
+  font-size: 1.4rem;
+}
+
+.top-nav nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 8px;
+  font-weight: 600;
+}
+
+.animated-welcome {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1877F2;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: slideMsg 13s linear infinite;
+  margin: 4px 0;
+}
+
+@keyframes slideMsg {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.signature {
+  font-style: italic;
+  color: #1877F2;
+  margin: 4px 0;
+}
+
+.top-bar {
+  position: sticky;
+  top: 116px;
+  background: #ff9966;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  z-index: 9;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.top-bar .actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.top-bar input {
+  padding: 0.45rem 1rem;
+  border-radius: 24px;
+  border: none;
+  min-width: 220px;
+  font-size: 0.95rem;
+}
+
+.top-bar button {
+  border: none;
+  border-radius: 24px;
+  padding: 0.5rem 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: #d85f4f;
+  color: white;
+}
+
+.top-bar button:hover {
+  opacity: 0.9;
+}
+
+main {
+  max-width: 1200px;
+  margin: 18px auto;
+  padding: 12px;
+  min-height: 300px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  margin-bottom: 8px;
+  background: #f9f9f9;
+}
+
+.card h3 {
+  margin: 6px 0 4px;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.card p {
+  font-size: 0.95rem;
+  margin: 4px 0;
+  color: #555;
+}
+
+.card .price {
+  color: #b12704;
+  font-weight: 700;
+  margin: 6px 0;
+  font-size: 1.1rem;
+}
+
+.card a {
+  align-self: flex-start;
+  background: #ff9900;
+  color: #111;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 24px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+}
+
+.card a:hover {
+  background: #e08500;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #d85f4f;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 10px 14px;
+  z-index: 10;
+}
+
+footer .socials {
+  display: flex;
+  gap: 16px;
+  font-size: 1.4rem;
+}
+
+footer .socials a {
+  color: white;
+  text-decoration: none;
+}
+
+#petit-logo {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  width: 60px;
+  height: 40px;
+  z-index: 11;
+}
+
+.toast {
+  position: sticky;
+  top: 180px;
+  margin: 0 auto 12px auto;
+  width: max-content;
+  background: #0a7d32;
+  color: #fff;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 20;
+  font-weight: bold;
+}
+
+[hidden] {
+  display: none !important;
+}

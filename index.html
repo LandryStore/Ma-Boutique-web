@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ma Boutique Express</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="top-nav">
+      <h1 class="logo-text">Ma Boutique Express</h1>
+      <nav>
+        <a href="#">Accueil</a>
+        <a href="#">Amazon</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+    <p class="animated-welcome">BIENVENUE_DANS_LA_BOUTIQUE_DE_LANDRY_DE_PIERRE</p>
+    <p class="signature">L.P Signature</p>
+  </header>
+
+  <div class="top-bar">
+    <div>Produits disponibles : <span id="product-count">0</span></div>
+    <div class="actions">
+      <input type="search" id="search-input" placeholder="Rechercher un produit..." />
+      <button id="refresh-btn" title="Recharger la liste des produits">Rafraîchir produits</button>
+    </div>
+  </div>
+
+  <main>
+    <div id="toast" role="status" aria-live="polite" class="toast" hidden>Produits rechargés ✅</div>
+    <section class="products-grid" id="grid"></section>
+  </main>
+
+  <footer>
+    <div class="socials">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook">📘</a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram">📸</a>
+      <a href="https://tiktok.com" target="_blank" aria-label="TikTok">🎵</a>
+      <a href="https://youtube.com" target="_blank" aria-label="YouTube">▶️</a>
+    </div>
+    <p>© 2025 Ma Boutique Express – Landry de Pierre • <span class="lp">L.P Signature</span></p>
+  </footer>
+
+  <div id="petit-logo" aria-label="Petit logo M et T avec G">
+    <svg width="60" height="40" viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo M&amp;T G">
+      <rect width="100" height="60" fill="yellow" rx="10" ry="10"/>
+      <text x="15" y="40" font-family="Arial, sans-serif" font-size="40" fill="blue" font-weight="bold">M&amp;T</text>
+      <text x="68" y="58" font-family="Arial, sans-serif" font-size="20" fill="blue" font-weight="bold">G</text>
+    </svg>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
